@@ -1,0 +1,77 @@
+﻿
+Path                        
+----                        
+G:\PROJECTS\task-manager-app
+├── public
+│   └── vite.svg
+├── src
+│   ├── assets
+│   │   └── react.svg
+│   ├── components
+│   │   ├── features
+│   │   │   ├── analytics
+│   │   │   │   ├── ProductivityChart.jsx
+│   │   │   │   └── ProductivityTimeline.jsx
+│   │   │   ├── dashboard
+│   │   │   │   ├── index.js
+│   │   │   │   ├── QuickActions.jsx
+│   │   │   │   └── StatsCards.jsx
+│   │   │   └── tasks
+│   │   │       ├── AddTaskModal.jsx
+│   │   │       ├── RecentTasks.jsx
+│   │   │       └── TaskList.jsx
+│   │   ├── layout
+│   │   │   ├── Header
+│   │   │   │   └── Header.jsx
+│   │   │   ├── Layout
+│   │   │   │   └── Layout.jsx
+│   │   │   ├── Sidebar
+│   │   │   │   └── Sidebar.jsx
+│   │   │   └── index.js
+│   │   └── ui
+│   │       ├── Badge
+│   │       │   └── Badge.jsx
+│   │       ├── Button
+│   │       │   └── Button.jsx
+│   │       ├── Card
+│   │       │   └── Card.jsx
+│   │       ├── Input
+│   │       │   └── Input.jsx
+│   │       ├── Modal
+│   │       │   └── Modal.jsx
+│   │       └── index.js
+│   ├── contexts
+│   │   ├── LanguageContext.jsx
+│   │   ├── TaskContext.jsx
+│   │   └── ThemeContext.jsx
+│   ├── hooks
+│   │   ├── index.jsx
+│   │   └── useI18n.js
+│   ├── i18n
+│   │   ├── locales
+│   │   │   ├── en.json
+│   │   │   └── es.json
+│   │   └── index.js
+│   ├── pages
+│   │   ├── Analytics
+│   │   │   └── Analytics.jsx
+│   │   ├── Dashboard
+│   │   │   └── Dashboard.jsx
+│   │   └── Tasks
+│   │       └── Tasks.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+├── tree-estructura.txt
+└── vite.config.js
+
+
