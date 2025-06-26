@@ -41,7 +41,6 @@ G:\PROJECTS\task-manager-app
 │   │       │   └── Modal.jsx
 │   │       └── index.js
 │   ├── contexts
-│   │   ├── LanguageContext.jsx
 │   │   ├── TaskContext.jsx
 │   │   └── ThemeContext.jsx
 │   ├── hooks

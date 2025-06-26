@@ -26,14 +26,15 @@ const Dashboard = () => {
         </div>
 
         <div className="flex items-center gap-3">
-          <Badge variant="success" className="flex items-center gap-1">
+          <Badge variant="success" className="flex items-center gap-1 shadow-sm">
             <TrendingUp className="w-3 h-3" />
             33% {t('dashboard.productivity')}
           </Badge>
-          <Button variant="secondary" className="flex items-center gap-2">
+          {/* Botón View Analytics mejorado */}
+          <button className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100 dark:border-gray-600 px-4 py-2 text-sm gap-2 shadow-sm hover:shadow-md transform hover:scale-105">
             <Eye className="w-4 h-4" />
             {t('dashboard.viewAnalytics')}
-          </Button>
+          </button>
         </div>
       </div>
 
@@ -54,10 +55,11 @@ const Dashboard = () => {
                 {t('dashboard.productivitySummary')}
               </h2>
             </div>
-            <Button variant="ghost" size="sm" className="flex items-center gap-2">
+            {/* Botón View Complete mejorado */}
+            <button className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed bg-slate-50 hover:bg-slate-100 text-slate-600 border border-slate-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-300 dark:border-gray-700 px-3 py-1.5 text-sm gap-2 hover:shadow-sm">
               <Eye className="w-4 h-4" />
               {t('dashboard.viewComplete')}
-            </Button>
+            </button>
           </div>
           <ProductivityChart />
         </div>

@@ -57,12 +57,20 @@ const Tasks = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            <Button variant="secondary" icon={Filter}>
+            {/* Botón Advanced Filters mejorado */}
+            <button className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 disabled:opacity-50 disabled:cursor-not-allowed bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100 dark:border-gray-600 px-4 py-2 text-sm gap-2 shadow-sm hover:shadow-md">
+              <Filter className="w-4 h-4" />
               {t('tasks.advancedFilters')}
-            </Button>
-            <Button icon={Plus} onClick={() => setShowAddTask(true)}>
+            </button>
+            
+            {/* Botón New Task mejorado */}
+            <button 
+              onClick={() => setShowAddTask(true)}
+              className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 px-4 py-2 text-sm gap-2 shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              <Plus className="w-4 h-4" />
               {t('tasks.newTask')}
-            </Button>
+            </button>
           </div>
         </div>
 

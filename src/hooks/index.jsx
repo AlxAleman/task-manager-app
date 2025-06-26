@@ -2,7 +2,6 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext.jsx';
 import { TaskContext } from '../contexts/TaskContext.jsx';
-import { LanguageContext } from '../contexts/LanguageContext.jsx';
 
 // Exportar useI18n desde el archivo correspondiente
 export { useI18n } from './useI18n.js';
@@ -21,15 +20,6 @@ export const useTasks = () => {
   const context = useContext(TaskContext);
   if (!context) {
     throw new Error('useTasks must be used within TaskProvider');
-  }
-  return context;
-};
-
-// Hook para el idioma - ESTE ERA EL QUE FALTABA EXPORTAR
-export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error('useLanguage must be used within LanguageProvider');
   }
   return context;
 };

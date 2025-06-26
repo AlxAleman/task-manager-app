@@ -19,7 +19,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: localStorage.getItem('taskflow-language') || 'es', // idioma por defecto
+    lng: localStorage.getItem('taskflow-language') || 'en', // idioma por defecto
     fallbackLng: 'en',
     
     interpolation: {
